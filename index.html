@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes films</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Mes films</h1>
+
+  <!-- Formulaire pour ajouter un film -->
+  <form id="movie-form">
+    <input type="text" id="title" placeholder="Titre" required>
+    <input type="number" id="year" placeholder="Année" min="1900" max="2100" required>
+    <input type="text" id="poster" placeholder="Lien de l'affiche (optionnel)">
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <!-- Recherche -->
+  <input type="search" id="search" placeholder="Rechercher un film...">
+
+  <!-- Les cartes sont créées par le JS ici -->
+  <main id="movies" class="grid"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
